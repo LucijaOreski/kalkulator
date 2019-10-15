@@ -1,7 +1,7 @@
 function calc(){
-    var a = parseInt(document.querySelector("#value1").value);
-    var b = parseInt(document.querySelector("#value2").value);
-    var op = document.querySelector("#operator").value;
+    var a = parseInt(document.getElementById("#value1").value);
+    var b = parseInt(document.getElementById("#value2").value);
+    var op = document.getElementById("#operator").value;
     var calculate; 
 
     if(op == "add"){
@@ -14,5 +14,5 @@ function calc(){
         calculate = a * b;
     }
     
-    document.querySelector("#result").innerHTML = calculate;
+    document.getElementById("#result").innerHTML = calculate;
 }
